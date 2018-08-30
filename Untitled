@@ -1,0 +1,25 @@
+// Making API calls to get the list of rows
+content = CreateObject("roSGNode", "ContentNode")
+    content.addfields({
+    HandlerConfigGrid: {
+    name: "CHRoot"
+        }
+    })
+grid.content = content
+
+'Where CHRoot is a ContentHandler responsible for getting rows for grid
+
+'If you know the structure of your grid but need to load content to the rows, implement:
+
+' content = CreateObject("roSGNode", "ContentNode")
+' row = CreateObject("roSGNode", "ContentNode")
+'     row.title = "first row"
+'     row.addfields({
+'     HandlerConfigGrid: {
+'     name: "ContentHandlerForRows"
+'     fields : {
+'         myField1 : "value I need to pass to content handler"
+'             }
+'         }
+'     })
+' grid.content = content

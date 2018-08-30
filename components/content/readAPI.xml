@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="readAPI" extends="ContentHandler" >
+
+    <script type="text/brightscript" uri="pkg:/components/content/readAPI.brs" />
+
+    <script type="text/brightscript" uri="pkg:/source/rsg_utils.brs" />
+    <!-- <script type="text/brightscript" uri="pkg:/components/content/http/http.brs" /> -->
+
+</component>
